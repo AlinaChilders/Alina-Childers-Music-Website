@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Film Composer & Sound Designer</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        let currentSlide = 0;
+        const slides = document.querySelectorAll(".slide");
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+          slides.forEach((slide, i) => {
+            slide.classList.toggle("active", i === index);
+          });
+        }
+
+        document.querySelector(".prev").addEventListener("click", () => {
+          currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+          showSlide(currentSlide);
+        });
+
+        document.querySelector(".next").addEventListener("click", () => {
+          currentSlide = (currentSlide + 1) % totalSlides;
+          showSlide(currentSlide);
+        });
+
+        // Initialize first slide
+        showSlide(currentSlide);
+      });
+    </script>
+
+    <div class="leaf type1"></div>
+    <div class="leaf type2"></div>
+    <div class="leaf type1"></div>
+    <div class="leaf type2"></div>
+    <div class="leaf type1"></div>
+    <div class="leaf type2"></div>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+      <h1><a href="#hero">Alina Childers</a></h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#listen">Listen</a></li>
+          <li><a href="#works">Projects</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h2>COMPOSER • SOUND DESIGNER • MIXING ENGINEER</h2>
+        <p>Original music and sound for film, games, and digital media.</p>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="section about reveal">
+      <h2>About</h2>
+
+      <div class="about-content">
+        <img src="profile.jpg" alt="Composer portrait" class="profile-img" />
+
+        <div class="text">
+          <p>
+            Alina Childers composes music and sound that blends narrative,
+            emotion, and technology, creating immersive audio experiences for
+            film, games, and digital media. Drawing on her classical training
+            and a wide palette of acoustic, electronic, and interactive sounds,
+            she designs hybrid scores that balance expressive storytelling with
+            technical precision. Alina’s background as a classically trained
+            pianist strongly informs and shapes her musical language. A
+            collaborative artist, Alina thrives on exploring new sonic
+            possibilities, integrating unconventional textures, coding, and
+            sound systems to serve each project’s unique vision.
+          </p>
+
+          <p>
+            She is currently pursuing a master’s degree in Screen Scoring at New
+            York University’s Steinhardt School, where her projects have ranged
+            from short films to indie games. Notable works include the game
+            Maritime Drift, a game in ongoing development since 2025 with a
+            small team (she is handling full composition, sound design, and
+            audio implementation), the short film Silent Pull (2025), which
+            screened at the LGBTQ+ Toronto Film Festival and won Best Student
+            Film, and Heart To He(art) (2025), which was featured in the Diamond
+            Screen Film and Media Arts Festival in Philadelphia. For each
+            project, she composed and mixed original music and contributed to
+            the overall audio design. Her passion for sound extends beyond
+            composition. She built this website herself using JavaScript, HTML,
+            and CSS, reflecting her interest in bridging music, sound, and
+            interactive technology.
+          </p>
+
+          <p>
+            Alina earned her Bachelor’s degree in Music from Temple University's
+            Boyer College of Music and Dance, where she developed her skills in
+            orchestration, audio production, music theory, and programming.
+            Beyond her creative work, Alina served as Vice President of
+            ConTemplum, an academic student organization focused on composition,
+            audio production, and music technology, where she organizes
+            workshops, concerts, and professional development events while
+            overseeing logistics and budgeting. During her studies, she
+            co-founded an independent initiative providing professional
+            recording opportunities for student composers, coordinating
+            sessions, rehearsal schedules, and production logistics. She also
+            teaches music theory, composition, and audio technology, mentoring
+            students in both creative and technical practice.
+          </p>
+
+          <p>
+            Driven by curiosity and collaboration, Alina seeks projects that
+            challenge her creatively and technically. She welcomes opportunities
+            to craft music, sound design, and immersive audio experiences for
+            new narratives and interactive worlds.
+          </p>
+
+          <p class="tagline">
+            <em
+              >"Technology is neutral, but it all depends on the way we use it."
+            </em>
+          </p>
+          <p>
+            <em>- Jean-Michel Jarre</em>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LISTEN ================= -->
+    <section id="listen" class="section listen reveal">
+      <h2>Listen</h2>
+      <p>
+        Selected tracks and score excerpts from film, games, and original
+        compositions.
+      </p>
+
+      <!-- ReelCrafter Embed -->
+      <iframe
+        width="100%"
+        height="800"
+        scrolling="no"
+        frameborder="no"
+        src="https://play.reelcrafter.com/embed/57454a40-bca9-4077-9916-fef4300af9e0"
+      ></iframe>
+
+      <a
+        href="https://play.reelcrafter.com/WjHAa0xKSa60iKpF_FIfTQ"
+        target="_blank"
+        rel="noopener"
+      >
+        View Full Reel on ReelCrafter →
+      </a>
+    </section>
+
+    <!-- ================= WORKS ================= -->
+    <section id="works" class="section works reveal">
+      <h2>Projects</h2>
+      <p>
+        Film, game, and personal projects featuring original music, sound
+        design, and audio mixing.
+      </p>
+
+      <div class="works-grid">
+        <a
+          href="https://vimeo.com/1074475067"
+          target="_blank"
+          class="work-card reveal-item"
+        >
+          <img src="Heart.jpeg" alt="Film project still" />
+          <div class="work-info">
+            <h3>Heart To Heart</h3>
+            <p>
+              Original score for a short film exploring memory and loss through
+              surreal oceanic imagery.
+            </p>
+          </div>
+        </a>
+
+        <a
+          href="https://lgbttorontofilmfestival.com/2025/10/14/filmmaker-interviews-from-the-lgbtq-film-festival/"
+          target="_blank"
+          class="work-card reveal-item"
+        >
+          <img src="silent.jpg" alt="Film project still" />
+          <div class="work-info">
+            <h3>Silent Pull (2025)</h3>
+            <p>
+              Original score for a short film exploring the navigation of
+              unreciprocated intimacy, systemic pressures, and romantic
+              vulnerability.
+            </p>
+          </div>
+        </a>
+
+        <div class="work-card reveal-item">
+          <img src="tonight.png" alt="Film project still" />
+          <div class="work-info">
+            <h3>The Straight-A Tonight Show (2025)</h3>
+            <p>
+              Original score for a short film exploring love, regret, and
+              emotional aftermath as two former partners confront the weight of
+              their shared past.
+            </p>
+          </div>
+        </div>
+
+        <div class="work-card reveal-item">
+          <img src="Glowspire.png" alt="Game project still" />
+          <div class="work-info">
+            <h3>Maritime Drift (2025 & Ongoing)</h3>
+            <p>
+              Original score, sound design, and audio development for an
+              atmospheric game centered on climate disaster, consequence, and
+              the player’s place within a damaged ecosystem.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="videos-grid">
+        <div class="video-wrapper reveal-item">
+          <video controls poster="video_cover_sub.jpg">
+            <source src="Sub_2.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <h3>Sub Video</h3>
+          <p>
+            Original composition inspired by subterranean acoustics, shaping
+            instrumental texture around echo, resonance, and decay.
+          </p>
+        </div>
+
+        <div class="video-wrapper reveal-item">
+          <video controls poster="kiki.png">
+            <source src="Website_Kiki_2.mp4" type="video/mp4" />
+          </video>
+          <h3>Kiki’s Delivery Service (1989) Rescore</h3>
+          <p>Rescore inspired by ’80s Japanese city-pop and lo-fi sounds.</p>
+        </div>
+
+        <div class="video-wrapper reveal-item">
+          <video controls poster="hot.png">
+            <source src="Website_Hot.mp4" type="video/mp4" />
+          </video>
+          <h3>Blink (2024) Rescore</h3>
+          <p>
+            Original score combining orchestral instrumentation, synths, and
+            manipulated instrumentation.
+          </p>
+        </div>
+
+        <div class="video-wrapper reveal-item">
+          <video controls poster="lion.png">
+            <source src="Website_Lion_2.mp4" type="video/mp4" />
+          </video>
+          <h3>Lion (2016) Rescore</h3>
+          <p>
+            Original score and sound design featuring select world instruments,
+            including the bansuri and sitar.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GALLERY SLIDESHOW ================= -->
+    <section id="gallery" class="section gallery reveal">
+      <h2>Gallery</h2>
+      <p>
+        A selection of behind-the-scenes shots, notation sketches, and original
+        art.
+      </p>
+
+      <div class="slideshow-container">
+        <div class="slide">
+          <img src="gallery1.jpg" alt="Gallery Image 1" />
+        </div>
+        <div class="slide">
+          <img src="gallery2.jpg" alt="Gallery Image 2" />
+        </div>
+        <div class="slide">
+          <img src="gallery3.png" alt="Gallery Image 3" />
+        </div>
+        <div class="slide">
+          <img src="gallery4.png" alt="Gallery Image 4" />
+        </div>
+        <div class="slide">
+          <img src="gallery5.png" alt="Gallery Image 4" />
+        </div>
+        <div class="slide">
+          <img src="gallery6.png" alt="Gallery Image 4" />
+        </div>
+        <div class="slide">
+          <img src="gallery7.png" alt="Gallery Image 4" />
+        </div>
+        <div class="slide">
+          <img src="gallery8.png" alt="Gallery Image 4" />
+        </div>
+        <div class="slide">
+          <img src="gallery9.png" alt="Gallery Image 4" />
+        </div>
+        <!-- Arrows -->
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- ================= STUDIO ================= -->
+    <!--
+    <section id="studio" class="section studio reveal">
+      <h2>Studio & Tools</h2>
+      <p>
+        Where sound comes to life — instruments, software, and creative gear.
+      </p>
+
+      <div class="studio-grid">
+        <div class="studio-card reveal-item">
+          <h3>DAWs & Software</h3>
+          <ul>
+            <li>Pro Tools • Logic Pro X • Ableton Live</li>
+            <li>Kontakt • Omnisphere • Serum</li>
+          </ul>
+        </div>
+
+        <div class="studio-card reveal-item">
+          <h3>Hardware</h3>
+          <ul>
+            <li>Moog Subsequent 37 • Nord Stage 3</li>
+            <li>Neumann TLM 103 • Apollo Twin X</li>
+          </ul>
+        </div>
+
+        <div class="studio-card reveal-item">
+          <h3>Sample Libraries</h3>
+          <ul>
+            <li>Spitfire Audio • Orchestral Tools</li>
+            <li>Heavyocity • Soundiron • Native Instruments</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+-->
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section contact reveal">
+      <h2>Contact</h2>
+      <p>For collaborations, commissions, or general inquiries:</p>
+
+      <form
+        id="contact-form"
+        action="https://formspree.io/f/xlgdzpdb"
+        method="POST"
+      >
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+        <p id="form-status" style="margin-top: 1rem"></p>
+      </form>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+      <div class="footer-content">
+        <p>© 2025 Alina Childers | Film Composer & Sound Designer</p>
+        <div class="social-icons">
+          <a
+            href="mailto:alinachildersmusic@outlook.com"
+            target="_blank"
+            aria-label="Email"
+            class="email-icon"
+          >
+            <img src="email-icon.png" alt="Email Icon" />
+          </a>
+          <a
+            href="https://www.instagram.com/alina__childers"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <img src="instagram-icon.png" alt="Instagram Icon" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
