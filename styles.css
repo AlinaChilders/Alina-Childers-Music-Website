@@ -529,3 +529,73 @@ footer {
   filter: brightness(0) invert(0.8) sepia(1) saturate(5) hue-rotate(30deg);
   /* subtle color pop on hover */
 }
+
+/* ============== MOBILE RESPONSIVE ============== */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    padding: 0 1.2rem;
+    height: 60px;
+  }
+
+  nav ul {
+    gap: 1rem;
+  }
+
+  header h1 a {
+    font-size: 1 rem;
+  }
+
+  nav ul li a {
+    font-size: 0.9rem;
+  }
+
+  .section {
+    padding: 50px 6%;
+  }
+
+  .section h2 {
+    font-size: 2rem;
+  }
+
+  .section p {
+    font-size: 0.95rem;
+  }
+
+  .profile-img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .about-content {
+    gap: 1rem;
+  }
+
+  .works-grid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  .videos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .video-wrapper video {
+    border-radius: 14px;
+  }
+
+  .slide img {
+    height: 300px;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  input,
+  textarea {
+    font-size: 1rem;
+  }
+}
