@@ -538,20 +538,25 @@ footer {
 
   /* ============== HEADER ============== */
   header {
-    padding: 0 1.2rem;
-    height: 60px;
+    flex-direction: column;
+    height: auto;
+    padding: 0.8rem 1rem;
+    gap: 0.4rem;
   }
 
   header h1 a {
-    font-size: 1 rem;
+    font-size: 0.95rem;
+    letter-spacing: 0.03em;
   }
 
   nav ul {
-    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem 1rem;
   }
 
   nav ul li a {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 
   /* ============== SECTIONS ============== */
@@ -575,6 +580,24 @@ footer {
 
   .about-content {
     gap: 1rem;
+  }
+
+  .hero {
+    padding: 0 1rem;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+    margin-top: 0.8rem;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* ============== WORKS (PROJECT CARDS) ============== */
