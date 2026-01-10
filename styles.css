@@ -602,17 +602,18 @@ footer {
   }
 
   .about-content {
-    gap: 1rem;
+    max-width: 100%;
   }
 
   /* ============== WORKS (PROJECT CARDS) ============== */
   .works-grid {
     grid-template-columns: 1fr;
-    max-width: 100%;
+    gap: 1.5rem;
   }
 
-  .work-card img {
-    max-height: 350px;
+  .work-card img,
+  .work-card video {
+    max-height: 300px;
   }
 
   /* ============== VIDEOS ============== */
@@ -622,15 +623,20 @@ footer {
 
   .video-wrapper {
     width: 100%;
+    padding: 0 0.5rem;
   }
 
   .video-wrapper video {
     border-radius: 14px;
   }
 
+  .video-wrapper p {
+    font-size: 0.9rem;
+  }
+
   /* ============== SLIDESHOW ============== */
   .slide img {
-    height: 300px;
+    height: 360px;
   }
 
   .prev,
