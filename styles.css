@@ -535,23 +535,26 @@ footer {
   body {
     overflow-x: hidden;
   }
+
+  /* ============== HEADER ============== */
   header {
     padding: 0 1.2rem;
     height: 60px;
-  }
-
-  nav ul {
-    gap: 1rem;
   }
 
   header h1 a {
     font-size: 1 rem;
   }
 
+  nav ul {
+    gap: 1rem;
+  }
+
   nav ul li a {
     font-size: 0.9rem;
   }
 
+  /* ============== SECTIONS ============== */
   .section {
     padding: 50px 6%;
   }
@@ -564,6 +567,7 @@ footer {
     font-size: 0.95rem;
   }
 
+  /* ============== HERO ============== */
   .profile-img {
     width: 180px;
     height: 180px;
@@ -573,23 +577,41 @@ footer {
     gap: 1rem;
   }
 
+  /* ============== WORKS (PROJECT CARDS) ============== */
   .works-grid {
     grid-template-columns: 1fr;
     max-width: 100%;
   }
 
+  .work-card img {
+    max-height: 350px;
+  }
+
+  /* ============== VIDEOS ============== */
   .videos-grid {
     grid-template-columns: 1fr;
+  }
+
+  .video-wrapper {
+    width: 100%;
   }
 
   .video-wrapper video {
     border-radius: 14px;
   }
 
+  /* ============== SLIDESHOW ============== */
   .slide img {
     height: 300px;
   }
 
+  .prev,
+  .next {
+    font-size: 1.5rem;
+    padding: 0.4rem 0.7rem;
+  }
+
+  /* ============== CONTACT ============== */
   form {
     max-width: 100%;
   }
@@ -597,5 +619,11 @@ footer {
   input,
   textarea {
     font-size: 1rem;
+  }
+
+  /* ============== FOOTER ============== */
+  .social-icons a img {
+    width: 28px;
+    height: auto;
   }
 }
