@@ -536,6 +536,17 @@ footer {
     overflow-x: hidden;
   }
 
+    /* ============== LEAF ANIMATION ============== */
+
+    .leaf {
+      opacity: 0.3;
+    }
+
+    .leaf:nth-child(1), 
+    .leaf:nth-child(6) {
+      left: 15%;
+    }
+    }
   /* ============== HEADER ============== */
   header {
     flex-direction: row;
