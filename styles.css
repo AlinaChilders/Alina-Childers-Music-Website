@@ -544,7 +544,7 @@ footer {
   }
 
   header h1 a {
-    font-size: 4rem;
+    font-size: 9rem;
     white-space: nowrap;
   }
 
@@ -573,7 +573,7 @@ footer {
   }
 
   .hero h2 {
-    font-size: 3rem;
+    font-size: 9rem;
     line-height: 1.2;
     letter-spacing: 0.04em;
   }
