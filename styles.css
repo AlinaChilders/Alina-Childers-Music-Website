@@ -538,25 +538,29 @@ footer {
 
   /* ============== HEADER ============== */
   header {
-    flex-direction: column;
-    height: auto;
-    padding: 0.8rem 1rem;
-    gap: 0.4rem;
+    flex-direction: row;
+    height: 60px;
+    padding: 0 0.8rem;
   }
 
   header h1 a {
-    font-size: 0.95rem;
-    letter-spacing: 0.03em;
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+
+  nav {
+    overflow-x: auto;
   }
 
   nav ul {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
-    gap: 0.6rem 1rem;
+    gap: 0.7rem;
   }
 
   nav ul li a {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
+    white-space: nowrap;
   }
 
   /* ============== HERO ============== */
