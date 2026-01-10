@@ -412,7 +412,6 @@ button:hover {
 /* === FLOATING FOREST LEAVES === */
 .leaf {
   position: absolute;
-  top: -10vh;
   width: 40px;
   height: 40px;
   background-size: contain;
@@ -420,7 +419,6 @@ button:hover {
   opacity: 0.4;
   pointer-events: none;
   animation: fall linear infinite;
-  z-index: 1;
 }
 
 /* Leaf type 1 */
@@ -545,7 +543,7 @@ footer {
   }
 
   header h1 a {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     white-space: nowrap;
   }
 
@@ -574,7 +572,7 @@ footer {
   }
 
   .hero h2 {
-    font-size: 0.7rem;
+    font-size: 1.7rem;
     line-height: 1.2;
     letter-spacing: 0.04em;
   }
